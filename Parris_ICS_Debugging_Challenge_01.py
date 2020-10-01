@@ -1,4 +1,3 @@
-#Riley's code. There are 3 syntax errors
 import random
 enemy_moves=['growl','scratch']
 type(enemy_moves)
@@ -22,12 +21,12 @@ while True:
     if comp_choice=='growl' and player_choice=='b': #ensuring both moves cancel each other out
       a=a
     if player_choice=='a': #what happens when the player uses thundershock
-      comp_health=comp_health-a+ #syntax error here
+      comp_health=comp_health-a
       print('Player used thundershock. The player striked the rattata with a jolt of electricity.')
     elif player_choice=='b': #what happens when the player uses inspect
       a=a+1
       print('Player used inspect. It raised your attack power.')
-    elif player_choice=='c'; #what happens when the player uses tail whip #syntax error here
+    elif player_choice=='c': #what happens when the player uses tail whip #syntax error here
       scratch=scratch-1
       print("Player used tail whip. It lowered the rattata's attack stat.")
     if player_health>20: #making it so that you can have at max 20 health
@@ -35,8 +34,8 @@ while True:
     if comp_health>20: #making it so that the enemy can have at max 20 health
         comp_health=20
     if a<1: #this prevents you from doing no damage
-      a=1
-    print('Player HP=, player_health, 'Rattata HP=', comp_health) #syntax error here
+    	a=1
+    	print("Player HP=, player_health, 'Rattata HP='', comp_health")
     if player_health<=0 or comp_health<=0:
         endgame=input("Would you like to play again? (yes/no)")
         if endgame=='yes':
