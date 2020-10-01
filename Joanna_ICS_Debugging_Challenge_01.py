@@ -1,15 +1,17 @@
+# Fixed some syntax errors
+
 import random
 mt = ['zombie', 'goblin', 'dragon']
 
 class Monster:
-    def __init__(self, x==18, y=='Anthy', z=='male', b=="100"):
+    def __init__(self, x=18, y='Anthy', z='male', b="100"):
         self.age = x
         self.name = y
         self.gender = z
         self.hitpoint = b
-        if len(self.name) > 4
+        if len(self.name) > 4:
             self.type = 'zombie'
-        else
+        else:
             self.type = 'goblin'
 
 
